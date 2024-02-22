@@ -10,6 +10,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [TreatySlipComponent, CreateContractComponent],
@@ -22,7 +23,8 @@ import {MatRadioModule} from '@angular/material/radio';
     ReactiveFormsModule,
     MatCheckboxModule,
     MatRadioModule,
-    FormsModule
+    FormsModule,
+    MatSelectModule
     
   ],
   exports: [TreatySlipComponent,CreateContractComponent],
