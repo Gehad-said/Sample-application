@@ -1,0 +1,118 @@
+<div class="body-margin">
+    <h1>Add Treaty Slip</h1>
+    <div class="tab_header">
+      <h2 style="color: #3e7ecc;">User details</h2>
+      
+      <div class="d-flex">
+        <div>
+        <p class="font-bold margin-spacing-5">User ID</p>
+        <h3 class="font-secondary font-bold margin-spacing-5">1234567890</h3>
+
+        </div>
+        <div>
+          <p class="font-bold margin-spacing-5">Date & Time</p>
+        <h3 class="font-secondary font-bold margin-spacing-5">10 February 2024 16:00</h3>
+        </div>
+        
+
+      </div>
+      <h2 style="color: #3e7ecc;">Slip details</h2>
+
+      <form (ngSubmit)="submit()">
+        <div>
+            <label for="">Unique Market Reference</label>
+         <input
+         id="uniqueMarketRef"
+         formControlName="uniqueMarketRef"
+       >
+
+<label for="">Treaty Number</label>
+       <input
+         id="treatyNumber"
+         label="Treaty Number"
+         formControlName="treatyNumber"
+       >
+
+        </div>
+
+        <label for="">Presentation Date</label>
+        <!-- <app-date-input></app-date-input> -->
+
+<label for="">Broker Code</label>
+         <div >
+           <input
+           id="brokerCode"
+           label="Broker Code"
+           formControlName="brokerCode"
+         >
+
+ <label for="">Broker Contact Name</label>
+         <input
+           id="brokerContactName"
+           label="Broker Contact Name"
+           formControlName="brokerContactName"
+         >
+
+          </div>
+<label for="">Pseudonym</label>
+          <div class="d-flex">
+           <input
+           id="pseudonym"
+           label="Pseudonym"
+           formControlName="pseudonym"
+         >
+
+ <label for="">Broker Contact Number</label>
+         <input
+           id="brokerContactNumber"
+           label="Broker Contact Number"
+           formControlName="brokerContactNumber"
+         >
+
+          </div>
+
+
+          <div class="d-flex">
+           <div>
+             <label for="">Contract Start Date</label>
+             <!-- <app-date-input></app-date-input> -->
+           </div>
+           <div class="margin-spacing-8">
+             <label for="">Contract End Date</label>
+             <!-- <app-date-input></app-date-input> -->
+           </div>
+
+          </div>
+
+
+          <div>
+            <label for="">Next Period Narrative</label>
+           <input
+           id="uniqueMarketRef"
+           label="Next Period Narrative"
+           formControlName="uniqueMarketRef"
+         >
+
+         
+         <!-- <dxc-select
+         label="Underwriting Year"
+         [options]="array1"
+         placeholder="Select"
+         size="large"
+         tabIndex="3"
+       >
+       </dxc-select> -->
+          </div>
+
+<label for="">Checkers Notepad</label>
+         <textarea
+           label="Checkers Notepad"
+           margin="medium"
+           size = 'large'
+         >
+         </textarea>
+
+         <button mat-button>
+            Add Section
+         </button>
+       </form>
