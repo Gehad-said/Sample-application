@@ -53,6 +53,17 @@
                 <mat-checkbox class="example-margin bureauDiv" ng-model="items.value" (onChange)="getbureauType(items.value)">{{items.value}}</mat-checkbox>
             </div>
             <form [formGroup]="formData" (ngSubmit)="submit()">
+                <p class="subname">Submission Type</p>
+                <mat-form-field style="margin-bottom: 25px;">
+                    <mat-label>Select</mat-label>
+                    <mat-select>
+                        <div *ngFor="let item of submissiontype">
+                            <mat-option value="{{item.value}}">{{item.label}}</mat-option>
+                        </div>
+                    </mat-select>
+                  </mat-form-field>
+
+
                 <p class="subname">Unique Market Reference</p>
                 <div class="d-flex">
                     <p style="color: grey; font-weight: bold;padding-right: 10px;font-size: 17px;margin-bottom: 28px !important;">B</p>
@@ -80,6 +91,16 @@
                   <mat-form-field class="example-full-width matInputField">
                       <input matInput placeholder="" value="">
                     </mat-form-field>
+
+                    <p class="subname">Status</p>
+                    <mat-form-field  style="margin-bottom: 25px;">
+                        <mat-label>Select</mat-label>
+                        <mat-select>
+                            <div *ngFor="let item of submissiontype">
+                                <mat-option value="{{item.value}}">{{item.label}}</mat-option>
+                            </div>
+                        </mat-select>
+                      </mat-form-field>
 
                 <!-- <dxc-select label="Submission Type" [options]="submissiontype" placeholder="Select" size="large"
                     tabIndex="3">
