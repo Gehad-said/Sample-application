@@ -7,8 +7,12 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { HelpComponent } from './components/help/help.component';
 import { IconComponent } from './components/utility/icon/icon.component';
 import { StepperComponent } from './components/stepper/stepper.component';
-
-
+import { InputTextComponent } from './components/input-text/input-text.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,17 +20,26 @@ import { StepperComponent } from './components/stepper/stepper.component';
     SpinnerComponent,
     HelpComponent,
     IconComponent,
-    StepperComponent
+    StepperComponent,
+    InputTextComponent,
+
   ],
   imports: [
     CommonModule,
-    SharedRoutingModule
+    SharedRoutingModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     GlobalHeaderComponent,
     SpinnerComponent,
     HelpComponent,
-    IconComponent
+    IconComponent,
+    InputTextComponent
   ]
 })
 export class SharedModule { }
