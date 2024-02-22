@@ -32,7 +32,7 @@ body {
 }
 
 .font-secondary {
-  color: var( --grey-dark);
+  color: var(--grey-dark);
 }
 
 .bg-red {
@@ -49,7 +49,7 @@ body {
 }
 
 .text-center {
-  text-align: center; 
+  text-align: center;
 }
 
 .font-bold {
@@ -161,6 +161,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
   &__section {
     background-color: transparent;
     border: none;
@@ -169,7 +170,8 @@ body {
     position: relative;
     min-width: fit-content;
     transform-style: preserve-3D;
-    & ~ .warning-message__section::before {
+
+    &~.warning-message__section::before {
       content: '';
       width: 1px;
       height: 50%;
@@ -182,12 +184,14 @@ body {
       transform: translateY(-50%) translateZ(-1px);
       z-index: -3;
     }
+
     &__label {
       align-items: center;
       display: flex;
       height: 100%;
       padding: 0 var(--spacing-02);
       position: relative;
+
       &--container {
         margin-left: var(--spacing-03);
       }
@@ -218,4 +222,12 @@ body {
   app-icon div {
     display: inline-block !important;
   }
+}
+
+.matInputField {
+  width: 350px;
+  border: 1px solid;
+  height: 40px;
+  margin-bottom: 30px;
+  border-radius: 5px;
 }
